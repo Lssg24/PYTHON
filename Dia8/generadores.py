@@ -44,7 +44,7 @@ print(next(g))
 '''
 
 #ejercicios practicos generadores
-def generador():
+'''def generador():
     generador = 0
     while generador >=0:
         generador += 1
@@ -54,9 +54,34 @@ generador=generador()
 print(next(generador))
 print(next(generador))
 print(next(generador))
+'''
 
-def generador():
- pass
+
+'''def generador():
+    generado = 0
+    while generado >= 0:
+        generado+=7
+        yield generado
 
 
 generador=generador()
+print(next(generador))
+print(next(generador))'''
+
+
+def mensaje():
+    x = "Te quedan 3 vidas"
+    yield x
+
+    x = "Te quedan 2 vidas"
+    yield x
+
+    x = "Te queda 1 vida"
+    yield x
+
+    x = "Game Over"
+    yield x
+
+
+perder_vida = mensaje()
+
