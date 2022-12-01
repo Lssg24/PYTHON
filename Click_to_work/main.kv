@@ -1,0 +1,60 @@
+<ui>:
+    MDScreen:
+        name: 'login'
+        image:''
+        name:'screen_principal'
+        md_bg_color: 0,.49,.255
+        BoxLayout:
+            orientation: 'vertical'
+            padding: '30dp'
+            halign: 'center'
+            size_hint:1,.7
+            pos_hint: {'center_y':0.5}
+            BoxLayout:
+                orientation:'vertical'
+                pos_hint: {'center_y':1}
+                Image:
+                    valign: 'middle'
+                    source: 'logo.png'
+                    pos_hint: {'center_y':1}
+            MDCard:
+                orientation:'vertical'
+                radius: '20dp'
+                padding: '10dp'
+                MDLabel:
+                    text: 'Iniciar Sesión'
+                    halign: 'center'
+                    pos_hint: {'center_y':1}
+                BoxLayout:
+                    orientation:'horizontal'
+                    padding: '10dp'
+                    MDTextField:
+                        id: user
+                        hint_text: "Rut usuario"
+                        icon_rigth: "account"
+                        icon_rigth_color: '#E4340E'
+                        halign: 'center'
+                        valign: 'middle'
+                        pos_hint: {'center_y':0.9}
+                BoxLayout:
+                    orientation:'horizontal'
+                    padding: '10dp'
+                    MDTextField:
+                        id: user
+                        hint_text: "Contraseña"
+                        icon_rigth: "account"
+                        icon_rigth_color: '#E4340E'
+                        halign: 'center'
+                        valign: 'middle'
+                        pos_hint: {'center_y':0.8}
+                        password: True
+                MDFillRoundFlatButton:
+                    text: 'Ingresar'
+                    size_hint_x: 0.8
+                    pos_hint: {'center_x':0.5, 'center_y':0}
+                    color: 'black'
+
+
+
+
+
